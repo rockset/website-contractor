@@ -2,7 +2,8 @@
 
  ## Setup	
 
-install gatsby-cli with `npm install -g gatsby-cli`	
+1.  `npm i`
+2.  `npm i -g gatsby-cli`	
 
  ## Development	
 
