@@ -2,18 +2,16 @@
 
  ## Setup	
 
-1.  `npm i`
+1. `npm i`
+2. `npm start`
 
-Install:
-Gatsby CLI version: 2.7.44
-Gatsby version: 2.3.27
+ ## Development	Build
 
- ## Development	
-
- `gatsby develop`	
+ `gatsby develop`	or `npm start`
  
  You should see the website hosted at localhost:9000.
 
-## Build
+## Production Build
 
-`gatsby build` to build the production version.
+`gatsby build` or `npm run build`
+
