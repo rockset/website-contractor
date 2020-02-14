@@ -3,7 +3,10 @@
  ## Setup	
 
 1.  `npm i`
-2.  `npm i -g gatsby-cli`	
+
+Install:
+Gatsby CLI version: 2.7.44
+Gatsby version: 2.3.27
 
  ## Development	
 
