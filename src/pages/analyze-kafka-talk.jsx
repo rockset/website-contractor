@@ -8,13 +8,17 @@ import headshotdhruba from '../images/headshot-dhruba.jpg';
 import styles from './index.module.css';
 
 const HeaderBanner = styled.section`
+  background-color: #fff;
   background: linear-gradient(
       277.26deg,
-      rgba(52, 50, 124, 0.9) 0.65%,
-      #6b3596 54.6%,
-      #9737ab 98.37%
+      rgba(52, 50, 124, 0.75) 0.65%,
+      rgba(107, 53, 150, 0.35) 54.6%,
+      rgba(151, 55, 171, 0.35) 98.37%
     ),
-    url('/images/techTalkBg.png') no-repeat center center;
+    url('/images/talkBg.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   padding: 100px 30px 50px;
   text-align: left;
