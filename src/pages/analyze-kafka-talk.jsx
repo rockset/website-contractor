@@ -5,15 +5,14 @@ import styled from 'styled-components';
 import SEO from '../components/seo';
 import Header from '../components/header';
 import headshotdhruba from '../images/headshot-dhruba.jpg';
-import styles from './index.module.css';
 
 const HeaderBanner = styled.section`
   background-color: #fff;
   background: linear-gradient(
       277.26deg,
       rgba(52, 50, 124, 0.75) 0.65%,
-      rgba(107, 53, 150, 0.35) 54.6%,
-      rgba(151, 55, 171, 0.35) 98.37%
+      rgba(107, 53, 150, 0.55) 54.6%,
+      rgba(151, 55, 171, 0.45) 98.37%
     ),
     url('/images/talkBg.png');
   background-position: center center;
@@ -104,6 +103,11 @@ const Content = styled.section`
     margin: 0 auto;
     max-width: 932px;
     padding: 30px;
+
+  /* Tablet */
+    @media (min-width: 768px) {
+      padding: 30px 120px 30px 30px;
+    }
   }
 `;
 
