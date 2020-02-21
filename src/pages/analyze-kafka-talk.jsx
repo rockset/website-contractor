@@ -104,7 +104,7 @@ const Content = styled.section`
     max-width: 932px;
     padding: 30px;
 
-  /* Tablet */
+    /* Tablet */
     @media (min-width: 768px) {
       padding: 30px 120px 30px 30px;
     }
@@ -130,52 +130,50 @@ const CTOImg = styled.img`
   width: 143px;
 `;
 
-const TechTalks = () => {
-  return (
-    <>
-      <SEO
-        title="Tech Talks"
-        keywords={[`rockset`, `data`, `apps`]}
-        description="Rockset is the real-time database in the cloud. Rockset allows you to create live dashboards and real-time data APIs on DynamoDB, Kafka, S3 and more."
-      />
-      <Header activePage="home" />
-      <div className="techTalk">
-        <HeaderBanner>
+const TechTalks = () => (
+  <>
+    <SEO
+      title="Tech Talks"
+      keywords={[`rockset`, `data`, `apps`]}
+      description="Rockset is the real-time database in the cloud. Rockset allows you to create live dashboards and real-time data APIs on DynamoDB, Kafka, S3 and more."
+    />
+    <Header activePage="home" />
+    <div className="techTalk">
+      <HeaderBanner>
+        <div>
           <div>
-            <div>
-              <WebsiteSubTitle>Tech Talk</WebsiteSubTitle>
-              <WebsiteTitle>Best practices for Analyzing Kafka Event Streams</WebsiteTitle>
-            </div>
-            <FormRegister />
+            <WebsiteSubTitle>Tech Talk</WebsiteSubTitle>
+            <WebsiteTitle>Best practices for Analyzing Kafka Event Streams</WebsiteTitle>
           </div>
-        </HeaderBanner>
-        <Content>
+          <FormRegister />
+        </div>
+      </HeaderBanner>
+      <Content>
+        <div>
+          <ContentTitle>The talk</ContentTitle>
+          <Copy>
+            The rapid adoption of Kafka as a streaming platform has created a growing need for
+            organizations to unlock the value in their Kafka data. In this tech talk, Dhruba
+            Borthakur discusses various design patterns for building analytics on Kafka event
+            streams. He will review the top considerations for analytics on Kafka - including data
+            latency, query performance, ease of use, and scalability - and share best practices when
+            selecting an analytics stack for Kafka data.
+          </Copy>
+        </div>
+        <div>
+          <ContentTitle>About the speaker</ContentTitle>
           <div>
-            <ContentTitle>The talk</ContentTitle>
+            <CTOImg src={headshotdhruba} alt="CTO &amp; Co-Founder Dhruba Borthakur" />
             <Copy>
-              The rapid adoption of Kafka as a streaming platform has created a growing need for
-              organizations to unlock the value in their Kafka data. In this tech talk, Dhruba
-              Borthakur discusses various design patterns for building analytics on Kafka event
-              streams. He will review the top considerations for analytics on Kafka - including data
-              latency, query performance, ease of use, and scalability - and share best practices
-              when selecting an analytics stack for Kafka data.
+              Dhruba is CTO and co-founder of Rockset. He was an engineer on the database team at
+              Facebook, where he was the founding engineer of the RocksDB data store. Earlier at
+              Yahoo, he was one of the founding engineers of the Hadoop Distributed File System.
             </Copy>
           </div>
-          <div>
-            <ContentTitle>About the speaker</ContentTitle>
-            <div>
-              <CTOImg src={headshotdhruba} alt="CTO &amp; Co-Founder Dhruba Borthakur" />
-              <Copy>
-                Dhruba is CTO and co-founder of Rockset. He was an engineer on the database team at
-                Facebook, where he was the founding engineer of the RocksDB data store. Earlier at
-                Yahoo, he was one of the founding engineers of the Hadoop Distributed File System.
-              </Copy>
-            </div>
-          </div>
-        </Content>
-      </div>
-    </>
-  );
-};
+        </div>
+      </Content>
+    </div>
+  </>
+);
 
 export default TechTalks;
