@@ -49,9 +49,10 @@ export class Demo extends React.Component {
 
           <DemoSectionContent>
             <DemoSectionText>
-              Rockset is a real-time database built for the cloud. It provides fast, full-featured
-              SQL on event streams and database change streams from Kafka, Kinesis, DynamoDB, and
-              more. Use Rockset as your database for serving data APIs and live dashboards.
+              Rockset is a real-time database in the cloud. It builds real-time converged indexes on
+              transactional data from other databases and event data from streams, and supports
+              schemaless ingest, built-in transformations and declarative SQL over REST. It is used
+              for building data applications that make intelligent decisions on real-time data.
             </DemoSectionText>
 
             <DemoSectionVideo>

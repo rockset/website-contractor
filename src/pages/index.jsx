@@ -311,9 +311,10 @@ class HomePage extends React.Component {
         <div className="homepage">
           <HeaderBanner>
             <div>
-              <WebsiteTitle>The Real-Time Database in the Cloud</WebsiteTitle>
+              <WebsiteTitle>Build Real-Time Data Applications at Scale</WebsiteTitle>
               <WebsiteSubTitle>
-                Fast queries on event streams and database change streams
+                The real-time database that increases developer velocity, delivers better
+                performance and greater scalability for applications that do real-time analytics
               </WebsiteSubTitle>
             </div>
             <FormWrapper>
